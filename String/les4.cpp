@@ -7,7 +7,8 @@ int main(){
     cin >> s >> s2;
     string s3 = s + ' ' + s2;
     int sum1 = 0, sum2 = 0;
-    for(int i = 0; i < max(s.size(), s2.size()); i++){
+    int n = max(s.size(), s2.size());
+    for(int i = 0; i < n; i++){
         sum1 += s[i];
         sum2 += s2[i];
     }
