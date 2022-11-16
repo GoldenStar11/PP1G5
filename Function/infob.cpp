@@ -10,9 +10,21 @@ double power(double a, int n){
     return s;
 }
 
+int min(a[], b[][], n){
+
+}
+
 int main(){
-    double x;
-    int k;
-    cin >> x >> k;
-    cout << power(x, k);
+    int n;
+    cin >> n;
+    int a[n], b[n][n];
+    for(int i = 0; i < n; i++){
+        cin >> a[i];
+    }
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            cin >> b[i][j];
+        }
+    }
+    min(a, b, n);
 }
