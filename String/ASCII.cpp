@@ -3,6 +3,8 @@
 using namespace std;
 
 int main(){
-    char c = '5';
-    cout << (c - '0') * 2 + 30;
+    /*char c = 'A';
+    cout << (int)c;*/
+    int a = 102;
+    cout << (char)a;
 }

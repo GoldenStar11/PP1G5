@@ -2,12 +2,10 @@
 
 using namespace std;
 
+int a1[100], b1[100];
+
 void howmany(int a[], int b[], int n){
-    int a1[100], b1[100], cnt = 0;
-    for(int i = 1; i <= 100; i++){
-        a1[i] = 0;
-        b1[i] = 0;
-    }
+    int cnt = 0;
     for(int i = 1; i <= n; i++){ /*
         6
         4 3 1 2 4 1
