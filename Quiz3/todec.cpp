@@ -9,7 +9,7 @@ int main(){
     int sum = 0;
     for(int i = 0; i < s.size(); i++){
         sum += (s[i] - 48) * pow(2,c);
-        c--; 
+        c--;
     }
     cout << sum;
 }
