@@ -5,11 +5,11 @@ using namespace std;
 int main(){
     string s;
     cin >> s;
-    string t = s;
+    string t = s; // abcbba = t = s
     int cnt = 0;
-    reverse(t.begin(), t.end());
+    reverse(t.begin(), t.end());  //abbcba
     if(s == t){
-        for(int i = 0; i < s.size(); i++){
+        for(int i = 0; i < 1; i++){
             for(int j = 0; j < s.size(); j++){
                 if(s[i] == s[j]) cnt++;
             }
@@ -19,7 +19,7 @@ int main(){
             }
         }
         s.erase(0,1);
-        cout << s.size();
+        cout << s.size();  
     }
     else cout << s.size();
 }
