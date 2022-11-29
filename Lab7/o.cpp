@@ -10,10 +10,10 @@ string dectok(int n, int k){
         return s;
     } 
     if(n % k < 10){
-        s += (n % k + 48);
-    }
+        s += (n % k + 48); // 48 - 57 = 0 - 9
+    } // s = "18"
     else{
-        s += (n % k + 55);  
+        s += (n % k + 55); // 10 + 55 = 65 - A
     }
     return dectok(n/k, k);
 }
