@@ -10,18 +10,14 @@ int main(){
   s.insert(4);
   s.insert(8);
 */
-  /*int n;
+  int n, a;
   cin >> n;
+  set<int> v;
   for(int i = 0; i < n; i++){
-    int a;
     cin >> a;
-    s.insert(a);
-  }*/
-
-  set<int>::iterator it;  // it = i(position)   *it = s[i](element)
-  
-  for(it = s.end()-1; it >= s.begin(); it--)
-    cout << *it << " ";
-
+    v.insert(a);
+  } // it = i(position)   *it = v[i](element on this position)
+  for(set<int>::iterator it = v.begin(); it != v.end(); it++)
+    cout << *it << ' ';
   return 0;
 }
