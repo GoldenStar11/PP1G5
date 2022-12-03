@@ -16,10 +16,14 @@ int main()
     2 2
     3 1
     */
+   bool flag = false;
     map<int, int>::iterator it;
     for (it = mp.begin(); it != mp.end(); it++){
         if (it->first == k){
+            flag = true;
             cout << it->second;
+            break;
         }
     }
+    if(!flag) cout << 0;
 }
