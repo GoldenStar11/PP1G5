@@ -10,7 +10,7 @@ int main(){
         string x;
         cin >> x;
         mp[x]++;
-    }
+    }// 01
     int cnt = 0;
     map <string,int> :: iterator it;
     for(it = mp.begin(); it != mp.end(); it++){

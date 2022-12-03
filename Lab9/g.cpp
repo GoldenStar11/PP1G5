@@ -19,3 +19,18 @@ int main(){
     reverse(t.begin(), t.end());
     cout << t;
 }
+/*
+    queue <int> q;
+    string s;
+    cin >> s;
+    for(int i = 0; i < s.size(); i++) { // 0111  queue 01
+        if(q.empty()) q.push(s[i]);
+        else if(q.front() == '1' && s[i] == '1') q.pop();
+        else q.push(s[i]);
+    }
+    while(q.size() != 0){
+        cout << q.front();
+        q.pop();
+    }
+}
+*/
