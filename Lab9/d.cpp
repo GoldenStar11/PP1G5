@@ -19,7 +19,7 @@ int main()
    bool flag = false;
     map<int, int>::iterator it;
     for (it = mp.begin(); it != mp.end(); it++){
-        if (it->first == k){
+        if(it->first == k){
             flag = true;
             cout << it->second;
             break;
