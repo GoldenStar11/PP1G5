@@ -5,9 +5,9 @@ using namespace std;
 int main(){
     stack<char> st;
     string s;
-    cin >> s; //String 0111   Stack 01
+    cin >> s; //String 0 1 11   Stack 0
     for(int i = 0; i < s.size(); i++){
-    if(st.size() == 0) st.push(s[i]);
+    if(st.empty()) st.push(s[i]);
     else if(st.top() == '1' && s[i] == '1') st.pop();
     else st.push(s[i]);
 }
