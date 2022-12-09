@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     stack<char> st;
     string s;
-    cin >> s; //String 0 1 11   Stack 0
+    cin >> s; //String 0111   Stack 01
     for(int i = 0; i < s.size(); i++){
     if(st.empty()) st.push(s[i]);
     else if(st.top() == '1' && s[i] == '1') st.pop();
@@ -13,8 +13,8 @@ int main(){
 }
     string t;
     while(st.size() != 0){
-        t += st.top();
-        st.pop();
+        t += st.top(); // t = 10
+        st.pop(); // Stack 
     }
     reverse(t.begin(), t.end());
     cout << t;
