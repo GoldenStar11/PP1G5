@@ -28,7 +28,8 @@ int main(){
     vector <int> v;
     while(!st.empty()){
         v.push_back(st.top());
-        st.pop();
+        st.pop();7\
+    
     }
     reverse(v.begin(), v.end());
     for(int i = 0; i < v.size(); i++){
