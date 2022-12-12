@@ -22,7 +22,7 @@ int main(){
             sort(vec.rbegin(), vec.rend());
         }
         while(vec.size() != n){
-                vec.push_back(0);
+            vec.push_back(0);
         }
         v.push_back(vec);
         vec.clear();
