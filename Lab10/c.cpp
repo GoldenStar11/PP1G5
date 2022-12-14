@@ -5,7 +5,7 @@ using namespace std;
 bool isSquare(char top, char c){
   if(top == '0') return false;
   int k = (top-48)*10 + (c-48);// k = 1 * 10 + 6 = 16 k = 40 + 9 = 49
-  if(sqrt(k) == int(sqrt(k))){ 4 = 4
+  if(sqrt(k) == int(sqrt(k))){ //4 = 4
     return true;
   }else{
     return false;
@@ -37,7 +37,12 @@ int main(){
 
   return 0;
 }
-
+/*
+3
+bella   ans = "abel"
+label   ans = "abel"
+roller  ans = "el"
+*/
 /*
 #include<iostream>
 #include<stack>
