@@ -1,0 +1,4 @@
+3
+Rus 18 3.8
+Zhanel 17 4
+Pupsen 18 3.6
